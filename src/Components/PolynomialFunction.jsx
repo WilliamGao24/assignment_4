@@ -10,6 +10,7 @@ function PolynomialEvaluation() {
 
     const polynomialEvaluation = (coeffs, exps, x) => {
         let result = 0;
+
         for (let i = 0; i < coeffs.length; i++) {
             result += parseFloat(coeffs[i]) * Math.pow(x, parseFloat(exps[i]));
         }
@@ -18,6 +19,7 @@ function PolynomialEvaluation() {
 
     const polynomialFunction = (coeffs, exps) => {
         let result = '';
+        
         for (let i = 0; i < coeffs.length; i++) {
             if (i === 0) {
                 result += coeffs[i] + 'x^' + exps[i];

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import "./heronsFormula.css";
 
-function HeronsFormula () {
+function HeronsFormula() {
     const [a, setA] = useState('');
     const [b, setB] = useState('');
     const [c, setC] = useState('');

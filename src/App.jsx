@@ -8,12 +8,19 @@ function App() {
   return (
     <div className="App">
       <h1>Math Calculator</h1>
-      <HeronsFormula />
-      <AmbiguousCase />
-      <NewtonsMethod />
-      <PolynomialFunction />
+      <div className="component">
+        <HeronsFormula />
+      </div>
+      <div className="component">
+        <AmbiguousCase />
+      </div>
+      <div className="component">
+        <NewtonsMethod />
+      </div>
+      <div className="component">
+        <PolynomialFunction />
+      </div>
     </div>
   );
 }
-
 export default App

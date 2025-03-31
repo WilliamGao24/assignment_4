@@ -3,17 +3,17 @@
   grid-template-columns: repeat(2, 1fr); /* Two columns */
   grid-gap: 20px; /* Space between grid items */
   padding: 20px;
-  height: 100vh; /* Make the grid fill the entire viewport height */
-  box-sizing: border-box; /* Include padding in height calculation */
-  width: 100%; /* Make the grid span the full width of the page */
-  max-width: 1200px; /* Optional: Limit the maximum width */
-  margin: 0 auto; /* Center the grid horizontally */
-  justify-items: center; /* Center items horizontally within the grid */
-  align-items: center; /* Center items vertically within the grid */
+  height: 100vh; /* Fill the viewport height */
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-items: center;
+  align-items: center;
 }
 
 h1 {
-  grid-column: span 2; /* Make the header span across both columns */
+  grid-column: span 2;
   text-align: center;
   font-size: 2.5em;
   margin-bottom: 20px;
@@ -22,24 +22,17 @@ h1 {
 
 .component {
   background-color: #ffffff;
-  border: 2px solid #4CAF50; /* Add a green border around each calculator */
+  border: 2px solid #4CAF50; /* Green border */
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%; /* Ensure components stretch to fit their grid cell */
-  max-width: 500px; /* Optional: Limit the maximum width of each component */
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  width: 100%;
+  max-width: 500px;
 }
 
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4; /* Light background for contrast */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh; /* Ensure the body fills the viewport height */
-}
+  background-color: #f4f4f4;
+} 

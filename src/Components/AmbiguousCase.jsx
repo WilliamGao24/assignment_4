@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './AmbiguousCase.css'
 
 
-function AmbiguousCase () {
+function AmbiguousCase() {
     const [A, setA] = useState('');
     const [a, setSideA] = useState('');
     const [b, setSideB] = useState('');
