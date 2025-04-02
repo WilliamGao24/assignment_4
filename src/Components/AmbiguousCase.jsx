@@ -3,19 +3,19 @@ import './AmbiguousCase.css'
 
 
 function AmbiguousCase() {
-    const [A, setA] = useState('');
+    const [angleA, setangleA] = useState('');
     const [a, setSideA] = useState('');
     const [b, setSideB] = useState('');
     const [result, setResult] = useState('');
 
     const ambiguousCase = (A, a, b) => {
-        const h = Math.round(b * Math.sin(A * Math.PI / 180));
+        const h = Math.round(b * Math.sin(angleA * Math.PI / 180));
 
-        if (A === 90) {
+        if (angleA === 90) {
             return 'Right triangle';
         }
 
-        if (A < 90) {
+        if (angleA < 90) {
             if (a < h) {
                 return "No triangle";
             } else if (a > b) {
@@ -40,7 +40,7 @@ function AmbiguousCase() {
 
     const handleAmbiguous = (event) => {
         event.preventDefault();
-        const angle = parseFloat(A);
+        const angle = parseFloat(angleA);
         const sideA = parseFloat(a);
         const sideB = parseFloat(b);
         setResult(ambiguousCase(angle, sideA, sideB));
@@ -50,7 +50,7 @@ function AmbiguousCase() {
         <div>
             <h2>Ambiguous Case</h2>
             <form onSubmit={handleAmbiguous}>
-                <input type="number" value={A} onChange={(e) => setA(e.target.value)} placeholder="Angle A" />
+                <input type="number" value={angleA} onChange={(e) => setA(e.target.value)} placeholder="Angle A" />
                 <input type="number" value={a} onChange={(e) => setSideA(e.target.value)} placeholder="Side A" />
                 <input type="number" value={b} onChange={(e) => setSideB(e.target.value)} placeholder="Side B" />
                 <button type="submit">Calculate</button>
